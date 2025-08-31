@@ -12,7 +12,7 @@ st.write("Take a photo of a product barcode and get nutrition information.")
 reader = BarCodeReader()
 
 # Camera input
-uploaded_file = st.camera_input("Take a photo of the barcode")
+uploaded_file = st.file_uploader("Take a photo of the barcode")
 
 if uploaded_file:
     # Convert Streamlit uploaded file to PIL Image
